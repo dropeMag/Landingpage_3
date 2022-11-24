@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Nome de fundo -->
+    <div id="bg-title" class="center">
+        <h1>OSCORP</h1>
+    </div>
+
+    <!-- Background do Modal -->
+    <section id="bg-modal" class="dpNone"></section>
+
+    <!-- Modal -->
+    <div id="modal" class="center dp-flex dpNone">
+        <h1>Inscreva-se para receber novidades!</h1>
+        <div class="dp-flex">
+            <label for="">Nome Completo:</label>
+            <input type="text" name="" id="">
+        </div>
+        <div class="dp-flex">
+            <label for="">Endereço de Email:</label>
+            <input type="email" name="" id="">
+        </div>
+        <div><button class="ef-btn">Inscrever</button></div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="dp-flex">
+        <!-- Div contendo logo e navbar -->
+        <div class="dp-flex">
+            <div>
+                <img src="img/img.logo.png" alt="">
+            </div>
+            <nav class="dp-flex">
+                <div>
+                    <a href="#">Product</a>
+                    <span></span>
+                </div>
+                <div>
+                    <a href="#">About</a>
+                    <span></span>
+                </div>
+                <div>
+                    <a href="#">Blog</a>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <!-- Área apenas para o catálogo -->
+        <section>
+            <a href="#">VIEW CATALOG</a>
+        </section>
+    </header>
+
+
+    <!-- Main - conteúdo principal -->
+    <main class="dp-flex">
+        <!-- section 1 - Chamada, Apresentação e Newsletter -->
+        <section class="container01">
+            <h3>O evento mais aguardado!</h3>
+            <h1>Grandes Coleções Chegando</h1>
+            
+            <section class="nemItems dp-flex">
+                <div id="ni-1">
+                    <p>164</p>
+                    <p>Itens</p>
+                    <p>Únicos</p>
+                </div>
+            
+                <div id="ni-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda blanditiis, debitis ab a reprehenderit excepturi aut repudiandae vero architecto, ad nihil sunt minus velit? Incidunt laboriosam exercitationem iusto!</p>
+                </div>
+            </section>
+            
+            <button class="ef-btn" id="openModal">Receber Newsletter</button>
+        </section>
+
+        <!-- section 2 - Imagem de modelo -->
+        <section class="container02 dp-flex">
+            <div>
+                <a href="https://www.pexels.com/pt-br/foto/mulher-em-camisa-cinza-de-mangas-compridas-2787341/" target="_blank" title="Foto de Ali Pazani">
+                    <img src="img/img.model01.jpg" alt="Imagem de uma modelo">
+                </a>
+            </div>
+        </section>
+
+        <!-- section 3 - Vetor e textos anunciantes -->
+        <section class="container03 dp-flex">
+            <section>
+                <a href="https://www.freepik.com/free-vector/feminine-line-art-sticker-fashion-business-branding-black-white-design-vector_20346279.htm#query=fashion&position=0&from_view=search" title="Black and white logo vector created by rawpixel.com - www.freepik.com" target="_blank"><img src="img/img.vector01.png" alt="Imagem com uma silhueta feminina"></a>
+            </section>
+            
+            <section id="txt-1">
+                <h2>100+</h2>
+                <p>Peças exclusivas e limitadas</p>
+            </section>
+            
+            <section id="txt-2">
+                <h2>100%</h2>
+                <p>De qualidade impecável</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

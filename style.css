@@ -1,0 +1,319 @@
+/*========================================
+GERAIS
+========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+::selection{
+    background-color: #F2668B;
+    color: white;
+}
+
+/*========================================
+CLASSES GLOBAIS
+========================================*/
+
+/* POSICIONAR ELEMENTOS NO CENTRO */
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* DISPLAY FLEX */
+.dp-flex{
+    display: flex;
+}
+
+/* EFEITO PADRÃO DE BOTÕES */
+.ef-btn{
+    margin-top: 30px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #03A688;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background .4s, letter-spacing .4s;
+}
+
+/* ESCONDE MODAL */
+#bg-modal.dpNone, #modal.dpNone{
+    display: none;
+}
+
+/*========================================
+BODY
+========================================*/
+
+body{
+    background-color: #011F26;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*========================================
+NOME DE FUNDO
+========================================*/
+
+#bg-title{
+    position: absolute;
+    z-index: 1;
+    font-size: 160px;
+}
+
+#bg-title h1{
+    color: #01364032;
+    transform: rotate(-20deg);
+    pointer-events: none;
+    user-select: none
+}
+
+/*========================================
+BACKGROUND MODAL
+========================================*/
+
+#bg-modal{
+    background-color: rgba(0, 0, 0, 0.679);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+/*========================================
+MODAL
+========================================*/
+
+#modal{
+    background-color: #011f26c5;
+    position: absolute;
+    border: 1px solid #013640;
+    border-radius: 30px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 4;
+}
+
+/* ÁREA DE CONTEÚDO */
+#modal div{
+    flex-direction: column;
+    gap: 5px;
+}
+
+#modal h1{
+    font-size: 30px;
+}
+
+#modal label{
+    font-weight: 200;
+}
+
+#modal input{
+    outline: none;
+    padding: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+/*========================================
+HEADER
+========================================*/
+
+header{
+    border-bottom: 1px solid #013640;
+    justify-content: space-between;
+}
+
+/* ÁREA COM LOGO E NAVBAR */
+header > div{
+    align-items: center;
+    gap: 60px;
+}
+
+/* LOGO */
+header div div img{
+    filter: invert(1);
+    width: 120px;
+    padding-left: 15px;
+}
+
+/* NAVBAR */
+header nav{
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+header nav div{
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    padding: 2px;
+}
+
+header nav div span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #F2668B;
+    transition: width .5s;
+}
+
+header nav div:hover span{
+    width: 100%;
+}
+
+/* ÁREA COM CATÁLOGO */
+header section{
+    border-left: 1px solid #013540;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+header section:hover{
+    background-color: #F2668B;
+}
+
+/*========================================
+MAIN
+========================================*/
+
+main{
+    height: 91%;
+}
+
+/*========================================
+CONTAINER 01 - MAIN
+========================================*/
+
+.container01{
+    width: 32%;
+    padding: 30px;
+    margin: 0 7%;
+}
+
+.container01 h3{
+    font-weight: 100;
+    padding: 0 0 20px 10px;
+    font-size: 13px;
+}
+
+.container01 h1{
+    font-size: 84px;
+    line-height: 100%;
+    color: #03A688;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+/* ITENS NOVOS E LOREM */
+.container01 .nemItems{
+    padding-left: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.container01 .nemItems #ni-1 p{
+    text-align: right;
+    font-size: 17px;
+    color: #03A688;
+}
+
+.container01 .nemItems #ni-2 p{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/* BOTÃO */
+.container01 button:hover, #modal button:hover{
+    border: 1px solid #F2668B;
+    background-color: #F2668B;
+    letter-spacing: 3px;
+}
+
+/*========================================
+CONTAINER 02 - MAIN
+========================================*/
+
+.container02{
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 30px;
+}
+
+.container02 div{
+    height: fit-content;
+    border-radius: 400px;
+    border: 1px solid #03a6883c;
+}
+
+.container02 div a{
+    display: block;
+    height: fit-content;
+    margin: 5px;
+    border: 1px solid #03a68887;
+    border-radius: 400px;
+}
+
+.container02 div img{
+    width: 300px;
+    margin: 5px 5px 0;
+    border-radius: 400px;
+    border: 1px solid #03A688;
+}
+
+/*========================================
+CONTAINER 03 - MAIN
+========================================*/
+
+.container03{
+    width: fit-content;
+    padding: 30px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.container03 img{
+    width: 100px;
+    filter: invert(1);
+    opacity: 40%;
+}
+
+.container03 h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.container03 p{
+    font-weight: 100;
+}
+
+/* ÁREAS COM TEXTOS DE ANÚNCIO */
+#txt-1, #txt-2{
+    padding: 6px 8px;
+    border-bottom-right-radius: .5em;
+    box-shadow: .5px .5px #03a688;
+}
